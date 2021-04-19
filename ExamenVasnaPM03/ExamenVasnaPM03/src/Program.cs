@@ -82,7 +82,7 @@ namespace ExamenVasnaPM03
         static private void SaveInFile() {
             using (StreamWriter sw = new StreamWriter("file.txt")) {
                 foreach (Weather w in Weathers) {
-                    sw.WriteLine(w.Temperatura + "°C; " + w.Vlagnost + "мм рт. ст.; " + w.Davlenie + "%; ");
+                    sw.WriteLine(w.Temperatura + "°C; " + w.Davlenie + "мм рт. ст.; " + w.Vlagnost + "%; ");
                 }
                 Console.WriteLine("Сохранено!");
             }
